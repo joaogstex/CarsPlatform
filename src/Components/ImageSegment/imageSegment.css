@@ -1,0 +1,80 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.container-car-segment {
+    position: relative;
+    color: white;
+    /*padding-top: 90px;*/
+}
+
+#car-segment-img {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 99%;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 50% 0);
+    background: rgba(0, 0, 0, 0.5); 
+    pointer-events: none; 
+}
+
+.text-content {
+    position: absolute;
+    top: 160px;
+    left: 70px;
+    align-items: center;
+}
+
+.title-car-segment {
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: -25px;
+    margin-bottom: 0;
+}
+
+.info-car-segment {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.car-segment-find-cars-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-weight: 500;
+    padding: 15px;
+    margin-top: 50px;
+    border-radius: 0;
+}
+
+.car-segment-find-cars-btn:hover {
+    color: var(--base-text);
+    background-color: white;
+    border-color: white;
+    transition: 0.6s;
+}
+
+@media (max-width: 768px) {
+    .title-car-segment {
+        font-size: 8vw; 
+    }
+    .info-car-segment {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-car-segment {
+        font-size: 10vw; 
+    }
+    .info-car-segment {
+        font-size: 6vw;
+    }
+}

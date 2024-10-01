@@ -1,0 +1,85 @@
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+footer .logo {
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+/* os links principais (Trabalhe conosco, Imprensa, etc.) */
+footer .links {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+footer .links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+footer .links a:hover {
+    text-decoration: underline;
+}
+
+footer .links a::after {
+    content: ' \2197'; /* símbolo do link externo */
+    font-size: 12px;
+}
+
+/* redes sociais */
+footer .social-media {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    color: grey;
+}
+
+/* seção legal (copyright e compliance) */
+footer .legal {
+    margin-top: 20px;
+    font-size: 12px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .legal div {
+    margin: 0;
+}
+
+footer .legal .compliance,
+footer .legal .copyright {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    footer .legal {
+        flex-direction: column; 
+        gap: 5px;
+    }
+}

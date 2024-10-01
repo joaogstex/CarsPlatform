@@ -1,0 +1,65 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.explore-container {
+    text-align: center;
+    align-items: center;
+    height: 641px;
+}
+
+.explore-title {
+    font-size: 32px;
+}
+
+.text-container{
+    margin-top: 150px;
+}
+
+.explore-btn {
+    margin-top: 25px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.explore-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* a distância da linha */
+    height: 2px; /* a espessura da linha */
+    background-color: transparent; /* a linha invisível por padrão */
+    transition: background-color 0.3s;
+}
+
+.explore-btn:focus::after,
+.explore-btn.active::after {
+    background-color: #ff5f6d; 
+}
+
+.explore-btn.active {
+    outline: none; 
+}
+
+.explore-btn:focus {
+    outline: none; /* vai remover a borda ao focar */
+}
+
+.car-imgs-container {
+    margin-top: 50px;
+}
+
+.car-img {
+    transition: 0.6s;
+}
+
+.car-img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
