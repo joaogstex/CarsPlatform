@@ -18,7 +18,7 @@ function Home() {
     <>
       <Header></Header>
       <ImageSegment imgSrc={"./src/assets/car-segment-div.png"} title={title} description={imageDescription} button={"Encontre-os aqui"}></ImageSegment>
-      <Explore></Explore>
+      <Explore exploreTitle={"Explore os nossos carros"}></Explore>
       <Services></Services>
       <ImageSegment imgSrc={"./src/assets/exp-service-img.jpeg"} title={title2} description={imageDescription2} button={"Saiba mais"} ></ImageSegment>
       <Footer></Footer>

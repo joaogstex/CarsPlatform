@@ -5,14 +5,18 @@ const Button = styled.button`
     display: ${({ show }) => (show ? 'block' : 'none')};
 `;
 
+const Overlay = styled.div`
+    display: ${({ showOverlay }) => (showOverlay ? 'block' : 'none')};
+`;
+
 function ImageSegment(props) {
 
-    const { description, title, showButton = true } = props;
+    const { description, title, showButton = true, overlay = true} = props;
 
     return (
         <div className='container-car-segment'>
             <img src={props.imgSrc} id="car-segment-img" alt="Car Segment" />
-            <div className='overlay'></div>
+            <Overlay className='overlay' showOverlay={overlay}>{props.overlay}</Overlay>
             <div className='text-content'>
                 <h2 className='title-car-segment'>
                     {title.split('\n').map((line, index) => (

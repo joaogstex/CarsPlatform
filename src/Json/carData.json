@@ -1,0 +1,20 @@
+{
+    "buttons": [
+      "Carros de passeio",
+      "SUVs",
+      "Esportivos",
+      "Híbridos",
+      "Pick-ups"
+    ],
+    "carImages": [
+      ["./src/assets/car-1.png", "./src/assets/car-2.png", "./src/assets/car-3.png"],
+      ["./src/assets/car-4.png", "./src/assets/car-5.png", "./src/assets/car-6.png"],
+      ["./src/assets/car-7.png", "./src/assets/car-8.png", "./src/assets/car-9.png"],
+      ["./src/assets/car-10.png", "./src/assets/car-11.png", "./src/assets/car-12.png"],
+      ["./src/assets/car-13.png", "./src/assets/car-14.png"]
+    ],
+    "additionalCarImages": [
+      ["./src/assets/car-15.png", "./src/assets/car-16.png", "./src/assets/car-17.png"],
+      ["./src/assets/car-18.png", "./src/assets/car-19.png"]
+    ]
+  }

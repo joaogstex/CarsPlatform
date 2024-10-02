@@ -63,3 +63,22 @@
     cursor: pointer;
     transform: scale(1.2);
 }
+
+.nav-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem; /* Ajuste conforme necessário */
+    cursor: pointer;
+    padding: 10px; /* Adicione um pouco de espaço */
+    outline: none; 
+}
+
+.nav-btn:focus {
+    outline: none;
+}
+
+.car-imgs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente as imagens e os botões */
+}
